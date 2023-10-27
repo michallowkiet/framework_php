@@ -3,6 +3,7 @@
         "phpunit/phpunit": "^10"
     },
     "require": {
-        "symfony/http-foundation": "^6.3"
+        "symfony/http-foundation": "^6.3",
+        "symfony/routing": "^6.3"
     }
 }
