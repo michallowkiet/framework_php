@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Framework\\Tests\\FrameworkTest::testErrorHandling":7},"times":{"Framework\\Tests\\FrameworkTest::testNotFoundHandling":0.085,"Framework\\Tests\\FrameworkTest::testErrorHandling":0.005,"Framework\\Tests\\FrameworkTest::testControllerResponse":0.014}}
