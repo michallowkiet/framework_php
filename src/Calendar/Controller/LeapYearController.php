@@ -12,9 +12,13 @@ class LeapYearController
         $leaYear = new LeapYear();
 
         if ($leaYear->isLeapYear($year)) {
-            return new Response('Tak, jest to rok przestępny');
+            $response = new Response('Tak, jest to rok przestępny');
+        } else {
+            $response = new Response('Nie jest to rok przestępny'.rand());
         }
 
-        return new Response('Nie jest to rok przestępny');
+        $response->setTtl(10);
+
+        return $response;
     }
 }
