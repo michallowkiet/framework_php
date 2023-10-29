@@ -1,14 +1,17 @@
 <?php
 
-namespace App\Controllers;
+namespace Calendar\Controller;
 
+use Calendar\Model\LeapYear;
 use Symfony\Component\HttpFoundation\Response;
 
 class LeapYearController
 {
     public function index(int $year): Response
     {
-        if (isLeapYear($year)) {
+        $leaYear = new LeapYear();
+
+        if ($leaYear->isLeapYear($year)) {
             return new Response('Tak, jest to rok przestępny');
         }
 
